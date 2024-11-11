@@ -1,0 +1,81 @@
+:root {
+  --primary-color: #59b256;
+}
+
+.education-sec {
+  width: 100%;
+  min-height: 100vh;
+ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.col .title {
+  padding: 0px 0px 20px 30px;
+}
+.col .contents {
+  padding: 0px 30px;
+  border-left: 2px solid #bababa;
+}
+
+ .col .contents .box {
+  position: relative;
+   /* padding: 20px; */
+  border: 1px solid #eaeaea;
+  border-radius: 2px;
+  /* background-color: #fafafa; */
+  cursor: pointer;
+  transition: all 0.4s;
+  margin-bottom: 20px;
+} 
+
+.col .contents .box:hover {
+  box-shadow: 2px 3px 12px 0px #ccc;
+  border: 1px solid transparent;
+}
+.col .contents .box::before {
+    content: "";
+    position: absolute;
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    right:calc(100% + 23px) ;
+    top:0 ;
+    background-color: var(--primary-color);
+    border: 2px solid white;
+}
+.box h4{
+    position: relative;
+    color: var(--primary-color);
+}
+.box h3{
+    font-size: 15px;
+    padding: 10px 0px 6px;
+    color: #444;
+}
+.box h5{
+    font-size: 15px;
+    color: #444;
+}
+
+.box p{ 
+    line-height: 1.2;
+    font-size: 14px;
+}
+.box span{
+    /* color: #777; */
+    font-size: 15px;
+}
+
+ul li {
+    font-size: 13px;
+    line-height: 1.2;
+    padding: 0; /* Removes extra padding */
+}
+
+
+@media(max-width: 998px){
+    .row{
+        grid-template-columns: 1fr;
+    }
+}
