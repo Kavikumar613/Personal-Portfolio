@@ -1,5 +1,5 @@
 import "./Style.css";
-import chat_app from "../../assets/Chat-App.png";
+import chat_app from "../../assets/Chat-APP.png";
 import customer_Management from "../../assets/Customer_Management.png";
 import noImage from "../../assets/Image_not_available.png";
 import { useContext, useState } from "react";
