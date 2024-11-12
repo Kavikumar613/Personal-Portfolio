@@ -27,7 +27,7 @@ const Contact = () => {
       return;
     }
     
-    await fetch("http://localhost:5001/sendEmail", {
+    await fetch("http://localhost:8000/sendEmail", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
