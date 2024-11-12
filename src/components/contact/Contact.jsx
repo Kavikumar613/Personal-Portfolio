@@ -26,8 +26,7 @@ const Contact = () => {
       alert("Please fill empty value");
       return;
     }
-    
-    await fetch(`${import.meta.env.VITE_GMAIL_PASS}/sendEmail`, {
+    await fetch(`${import.meta.env.BACKEND_URL}/sendEmail`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
