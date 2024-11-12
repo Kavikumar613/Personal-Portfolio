@@ -26,7 +26,6 @@ const Contact = () => {
       alert("Please fill empty value");
       return;
     }
-    https://personal-portfolio-backend-beta.vercel.app
     await fetch(`${import.meta.env.VITE_BACKEND_URL}/sendEmail`, {
       method: "POST",
       headers: {
