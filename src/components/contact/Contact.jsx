@@ -27,7 +27,7 @@ const Contact = () => {
       return;
     }
     
-    await fetch("http://localhost:8000/sendEmail", {
+    await fetch(`${import.meta.env.VITE_GMAIL_PASS}/sendEmail`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
